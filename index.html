@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Antariksh Pasricha | Official Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Official website of Antariksh Pasricha – musician, educator, and researcher."
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons (Font Awesome) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Optional: nicer responsive embed for YouTube section */
+      .video-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      @media (max-width: 768px) {
+        .video-grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+      }
+      .video-card {
+        padding: 1rem;
+      }
+      .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+        overflow: hidden;
+        border-radius: 1rem;
+      }
+      .video-wrapper iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ================= HEADER / NAV ================= -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="index.html#top" class="logo">
+          <span class="logo-text">
+            <span class="logo-name">Antariksh Pasricha</span>
+            <span class="logo-tagline">Musician • Educator • Researcher</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="nav">
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Toggle navigation"
+          >
+            <span></span><span></span><span></span>
+          </button>
+
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html#home" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="showcase.html">Showcase</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1Vss2K07emHJsb5LBBo6KbpOdVuDHww5l/view"
+                target="_blank"
+                rel="noopener"
+              >
+                CV
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+
+      <div class="container hero-inner">
+        <!-- PHOTO ON THE LEFT -->
+        <div class="hero-visual" data-animate="fade-in">
+          <div class="portrait-card">
+            <div class="portrait-circle"></div>
+            <div class="portrait-image">
+              <img
+                src="./public/3.jpg"
+                alt="Antariksh Pasricha"
+                class="portrait-photo"
+              />
+            </div>
+            <div class="portrait-glow"></div>
+          </div>
+        </div>
+
+        <!-- TEXT ON THE RIGHT -->
+        <div class="hero-copy" data-animate="fade-up">
+          <h1>
+            A seeker that blends
+            <span class="hero-highlight">soul, science, and sound.</span>
+          </h1>
+          <p class="hero-kicker">Welcome to My World!</p>
+          <p class="hero-text">
+            I am Antariksh Pasricha – a musician, educator, and researcher with
+            over 15 years in the world of music. My work explores teaching,
+            interdisciplinary pedagogy, and research that connects the
+            scientific and artistic sides of musical experience.
+          </p>
+          <div class="hero-actions">
+            <a href="about.html" class="btn primary">Explore my Journey</a>
+          </div>
+          <div class="hero-social">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/@AntarikshPasricha"
+              aria-label="YouTube"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <!-- <a href="#" aria-label="Twitter"
+              ><i class="fab fa-x-twitter"></i
+            ></a> -->
+            <a
+              target="_blank"
+              href="https://www.instagram.com/theantarikshpasricha/"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/antariksh-pasricha/"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="mailto:antariksh.pasricha@gmail.com" aria-label="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AT A GLANCE (HOME) ================= -->
+    <section class="section accent" id="glance">
+      <div class="container section-inner" data-animate="fade-up">
+        <header class="section-header">
+          <h2>At a Glance</h2>
+          <p>A quick snapshot of who I am and what I do.</p>
+        </header>
+
+        <div class="card soft">
+          <ul class="list-check">
+            <li>
+              Based in Chandigarh, India, with 5+ years blending masterful
+              performances and innovative pedagogy in music education.
+            </li>
+            <li>
+              Holds B.Tech in Computer Science, M.A. in Music, and UGC NET
+              qualification; fuses music with science (frequencies), math (taal
+              permutations), languages, and sports analogies like basketball
+              rhythms.
+            </li>
+            <li>
+              Trains students, composes/records music, and directs live events
+              for annual shows, embracing continuous learning through every
+              project.
+            </li>
+            <li>
+              Passionate researcher sharing insights at national/international
+              conferences—see the Research page for more details.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED VIDEOS (YouTube embeds) ================= -->
+    <section class="section" id="videos">
+      <div class="container section-inner" data-animate="fade-up">
+        <header class="section-header">
+          <h2>Featured Videos</h2>
+          <p>Selected performances and sessions from my YouTube channel.</p>
+        </header>
+
+        <div class="video-grid">
+          <!-- PERFORMANCE 1 -->
+          <article class="card video-card">
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/wxyV_s2k-8M"
+                title="Performance 1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h3>Improvising over the meditative Raag Nat Bhairav!</h3>
+          </article>
+
+          <article class="card video-card">
+            <div class="video-wrapper">
+              <!-- Replace VIDEO_ID_2 with your actual YouTube video ID -->
+              <iframe
+                src="https://www.youtube.com/embed/b1Habwsgzqs?si=6zD8Z6XFtc994Q6u"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h3>
+              Composed, recorded and produced a bhajan for Lord Ganesha on
+              Ganesh Chaturthi
+            </h3>
+          </article>
+
+          <!-- Optional third video -->
+          <!--
+          <article class="card video-card">
+            <h3>Performance 3</h3>
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/VIDEO_ID_3"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </article>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          &copy; <span id="year"></span> Antariksh Pasricha. All rights
+          reserved.
+        </p>
+        <div class="footer-links">
+          <a href="#home">Back to top</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
