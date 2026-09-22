@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,12 +10,12 @@
       content="Official website of Antariksh Pasricha – musician, educator, and researcher."
     />
     <!-- Google Fonts -->
-    <link
+   <!-- <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <!-- Icons (Font Awesome) -->
-    <link
+  <!--  <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -66,8 +67,8 @@
           </span>
         </a>
         -->
-        <h1> This webpage isn't functional any longer. New Link coming soon.. till then please connect at antariksh.pasricha@gmail.com or 
-        at <a href="https://www.linkedin.com/in/antariksh-pasricha/">My LinkedIn</a></h1>
+    <!--    <h1> This webpage isn't functional any longer. New Link coming soon.. till then please connect at antariksh.pasricha@gmail.com or 
+        at <a href="https://www.linkedin.com/in/antariksh-pasricha/">LinkedIn</a></h1>
           <!--
         <nav class="nav" id="nav">
           <button
@@ -277,9 +278,1359 @@
     <!--
     <script src="script.js"></script> 
     -->
-  </body>
+<!--  </body>
 </html>
+-->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <title>Antariksh Pasricha | Researcher, Musician & Educator</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta
+    name="description"
+    content="Official website of Antariksh Pasricha — researcher, musician and educator exploring auditory perception, pitch, microtonality, music cognition and musical experience."
+  />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Existing Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Additional styles only for the redesigned homepage -->
+  <style>
+
+    /* =====================================================
+       HOME PAGE — RESEARCH REDESIGN
+    ===================================================== */
+
+    :root {
+      --research-blue: #243b53;
+      --research-light: #f5f7fa;
+      --research-border: rgba(36, 59, 83, 0.12);
+      --research-muted: #64748b;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    /* ================= HERO ================= */
+
+    .research-hero {
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .research-hero-inner {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 4rem;
+      align-items: center;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+
+    .research-label {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      opacity: 0.75;
+    }
+
+    .research-hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(3rem, 6vw, 5.8rem);
+      line-height: 1.03;
+      margin: 0 0 1.3rem;
+    }
+
+    .research-hero h1 span {
+      display: block;
+    }
+
+    .hero-role {
+      font-size: 1.05rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      margin-bottom: 1.5rem;
+    }
+
+    .research-hero-text {
+      font-size: 1.08rem;
+      line-height: 1.85;
+      max-width: 720px;
+      opacity: 0.85;
+    }
+
+    .research-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    .research-hero-social {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2.2rem;
+    }
+
+    .research-hero-social a {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid var(--research-border);
+      transition: 0.25s ease;
+      text-decoration: none;
+    }
+
+    .research-hero-social a:hover {
+      transform: translateY(-3px);
+    }
+
+    /* HERO PHOTO */
+
+    .research-portrait {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .research-portrait-frame {
+      width: min(390px, 90%);
+      position: relative;
+    }
+
+    .research-portrait-frame::before {
+      content: "";
+      position: absolute;
+      width: 90%;
+      height: 90%;
+      top: -18px;
+      right: -18px;
+      border: 1px solid var(--research-border);
+      border-radius: 24px;
+      z-index: 0;
+    }
+
+    .research-portrait-frame img {
+      width: 100%;
+      display: block;
+      position: relative;
+      z-index: 1;
+      border-radius: 24px;
+      object-fit: cover;
+    }
+
+    /* ================= GENERAL SECTION ================= */
+
+    .home-section {
+      padding: 6rem 0;
+    }
+
+    .home-section-header {
+      max-width: 760px;
+      margin-bottom: 3rem;
+    }
+
+    .home-section-header .eyebrow {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-weight: 600;
+      opacity: 0.65;
+      margin-bottom: 0.8rem;
+    }
+
+    .home-section-header h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.1rem, 4vw, 3.3rem);
+      margin: 0 0 1rem;
+    }
+
+    .home-section-header p {
+      font-size: 1.03rem;
+      line-height: 1.8;
+      opacity: 0.78;
+    }
+
+    /* ================= INTRO ================= */
+
+    .research-intro {
+      background: var(--research-light);
+    }
+
+    .research-intro-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .intro-heading {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    .intro-copy p {
+      font-size: 1.04rem;
+      line-height: 1.9;
+      margin-top: 0;
+      margin-bottom: 1.2rem;
+    }
+
+    /* ================= RESEARCH AREAS ================= */
+
+    .research-area-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.4rem;
+    }
+
+    .research-area-card {
+      border: 1px solid var(--research-border);
+      border-radius: 18px;
+      padding: 2rem;
+      transition: 0.25s ease;
+      background: #fff;
+    }
+
+    .research-area-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .research-area-number {
+      font-size: 0.8rem;
+      font-weight: 600;
+      opacity: 0.5;
+      margin-bottom: 1.4rem;
+    }
+
+    .research-area-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.5rem;
+      margin: 0 0 0.8rem;
+    }
+
+    .research-area-card p {
+      line-height: 1.75;
+      opacity: 0.76;
+      margin-bottom: 0;
+    }
+
+    /* ================= CURRENT QUESTIONS ================= */
+
+    .questions-section {
+      background: var(--research-light);
+    }
+
+    .question-list {
+      max-width: 950px;
+    }
+
+    .research-question {
+      display: grid;
+      grid-template-columns: 55px 1fr;
+      gap: 1rem;
+      padding: 1.7rem 0;
+      border-bottom: 1px solid var(--research-border);
+    }
+
+    .question-number {
+      font-family: "Playfair Display", serif;
+      font-size: 1.3rem;
+      opacity: 0.45;
+    }
+
+    .research-question p {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+      line-height: 1.5;
+    }
+
+    /* ================= RESEARCH / PUBLICATIONS ================= */
+
+    .academic-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .academic-card {
+      padding: 2rem;
+      border: 1px solid var(--research-border);
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .academic-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+      opacity: 0.6;
+    }
+
+    .academic-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.35rem;
+      line-height: 1.45;
+      margin: 0 0 0.8rem;
+    }
+
+    .academic-card p {
+      line-height: 1.7;
+      opacity: 0.72;
+    }
+
+    .academic-link {
+      display: inline-block;
+      margin-top: 0.7rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    /* ================= INTERDISCIPLINARY BACKGROUND ================= */
+
+    .background-section {
+      background: var(--research-light);
+    }
+
+    .background-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .background-card {
+      padding: 2rem;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid var(--research-border);
+    }
+
+    .background-card i {
+      font-size: 1.5rem;
+      margin-bottom: 1.3rem;
+      opacity: 0.7;
+    }
+
+    .background-card h3 {
+      margin-top: 0;
+      font-size: 1.15rem;
+    }
+
+    .background-card p {
+      line-height: 1.7;
+      opacity: 0.72;
+    }
+
+    /* ================= MUSIC ================= */
+
+    .music-highlight-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .music-highlight-copy p {
+      font-size: 1.04rem;
+      line-height: 1.85;
+    }
+
+    .music-highlight-copy h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+    }
+
+    .music-statements {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .music-statement {
+      border-left: 3px solid currentColor;
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* ================= CTA ================= */
+
+    .home-cta {
+      text-align: center;
+      padding: 7rem 1rem;
+    }
+
+    .home-cta h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.3rem, 5vw, 4rem);
+      margin-bottom: 1rem;
+    }
+
+    .home-cta p {
+      max-width: 650px;
+      margin: 0 auto 2rem;
+      line-height: 1.8;
+      opacity: 0.75;
+    }
+
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 900px) {
+
+      .research-hero-inner,
+      .research-intro-grid,
+      .music-highlight-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .research-hero-copy {
+        order: 2;
+      }
+
+      .research-portrait {
+        order: 1;
+      }
+
+      .research-portrait-frame {
+        width: min(300px, 80%);
+      }
+
+      .research-area-grid,
+      .academic-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .background-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .research-hero {
+        min-height: auto;
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      .home-section {
+        padding: 4rem 0;
+      }
+
+      .research-hero-inner {
+        gap: 2.5rem;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+      }
+
+      .research-hero h1 {
+        font-size: 3rem;
+      }
+
+      .research-question {
+        grid-template-columns: 35px 1fr;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+
+      <a href="index.html" class="logo">
+        <span class="logo-text">
+
+          <span class="logo-name">
+            Antariksh Pasricha
+          </span>
+
+          <span class="logo-tagline">
+            Researcher · Musician · Educator
+          </span>
+
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+          <li>
+            <a href="index.html" class="active">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+          <li>
+            <a href="research.html">Research</a>
+          </li>
+
+          <li>
+            <a href="teaching.html">Teaching</a>
+          </li>
+
+          <li>
+            <a href="showcase.html">Showcase</a>
+          </li>
+
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+
+  <main>
+
+    <section class="research-hero" id="home">
+
+      <div class="container research-hero-inner">
+
+        <!-- TEXT -->
+
+        <div class="research-hero-copy" data-animate="fade-up">
+
+          <span class="research-label">
+            Music · Cognition · Auditory Perception
+          </span>
+
+          <h1>
+            Antariksh
+            <span>Pasricha</span>
+          </h1>
+
+          <div class="hero-role">
+            Researcher · Musician · Educator
+          </div>
+
+          <p class="research-hero-text">
+            I explore how humans perceive musical sound, with particular
+            interests in pitch, microtonality, auditory perception, musical
+            training and culture.
+          </p>
+
+          <p class="research-hero-text">
+            My work brings together questions from music cognition,
+            psychoacoustics, Indian classical music, music education and
+            technology.
+          </p>
+
+          <div class="research-hero-actions">
+
+            <a href="research.html" class="btn primary">
+              Explore My Research
+            </a>
+
+            <a href="#academic-work" class="btn secondary">
+              Academic Work
+            </a>
+
+          </div>
+
+          <!-- SOCIAL -->
+
+          <div class="research-hero-social">
+
+            <a
+              href="https://www.linkedin.com/in/antariksh-pasricha/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com/@AntarikshPasricha"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/theantarikshpasricha/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a
+              href="mailto:antariksh.pasricha@gmail.com"
+              aria-label="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- PHOTO -->
+
+        <div class="research-portrait" data-animate="fade-in">
+
+          <div class="research-portrait-frame">
+
+            <img
+              src="./public/3.jpg"
+              alt="Antariksh Pasricha"
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT / RESEARCH INTRO
+    ====================================================== -->
+
+    <section class="home-section research-intro">
+
+      <div class="container research-intro-grid">
+
+        <div>
+
+          <span class="research-label">
+            About My Work
+          </span>
+
+          <h2 class="intro-heading">
+            Between sound,
+            perception and
+            musical experience.
+          </h2>
+
+        </div>
+
+
+        <div class="intro-copy">
+
+          <p>
+            My journey has moved across computer science, music performance,
+            music education and, increasingly, the scientific study of musical
+            perception.
+          </p>
+
+          <p>
+            I am particularly interested in understanding how we perceive
+            continuous and fine-grained changes in pitch, how musical training
+            influences auditory perception, and how culturally specific
+            musical systems interact with more general mechanisms of hearing.
+          </p>
+
+          <p>
+            My background in Hindustani classical music and several years of
+            music education also shape the questions I ask about musical
+            learning, listening and embodied musical experience.
+          </p>
+
+          <a href="about.html" class="academic-link">
+            More about my journey →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         RESEARCH AREAS
+    ====================================================== -->
+
+    <section class="home-section">
+
+      <div class="container">
+
+        <header class="home-section-header">
+
+          <div class="eyebrow">
+            Research Interests
+          </div>
+
+          <h2>
+            What I am interested in
+          </h2>
+
+          <p>
+            My research interests sit at the intersection of auditory science,
+            music cognition, musical culture and technology.
+          </p>
+
+        </header>
+
+
+        <div class="research-area-grid">
+
+          <!-- 01 -->
+
+          <article class="research-area-card">
+
+            <div class="research-area-number">
+              01
+            </div>
+
+            <h3>
+              Pitch & Microtonality
+            </h3>
+
+            <p>
+              Fine-pitch discrimination, continuous pitch, microtonal
+              perception and the relationship between acoustic frequency and
+              musical pitch.
+            </p>
+
+          </article>
+
+
+          <!-- 02 -->
+
+          <article class="research-area-card">
+
+            <div class="research-area-number">
+              02
+            </div>
+
+            <h3>
+              Auditory & Music Perception
+            </h3>
+
+            <p>
+              How listeners perceive musical sound, including questions
+              involving pitch relationships, tuning, consonance, auditory
+              discrimination and perceptual organisation.
+            </p>
+
+          </article>
+
+
+          <!-- 03 -->
+
+          <article class="research-area-card">
+
+            <div class="research-area-number">
+              03
+            </div>
+
+            <h3>
+              Musical Training & Culture
+            </h3>
+
+            <p>
+              How long-term musical experience, training and cultural
+              environments may shape the way listeners hear and organise
+              musical sound.
+            </p>
+
+          </article>
+
+
+          <!-- 04 -->
+
+          <article class="research-area-card">
+
+            <div class="research-area-number">
+              04
+            </div>
+
+            <h3>
+              Music, Technology & Computation
+            </h3>
+
+            <p>
+              Using digital audio, computational tools and experimental
+              methods to study musical sound while connecting technological
+              approaches with questions from perception and cognition.
+            </p>
+
+          </article>
+
+        </div>
+
+
+        <div style="margin-top: 2.5rem;">
+
+          <a href="research.html" class="btn primary">
+            View Research
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CURRENT QUESTIONS
+    ====================================================== -->
+
+    <section class="home-section questions-section">
+
+      <div class="container">
+
+        <header class="home-section-header">
+
+          <div class="eyebrow">
+            Questions
+          </div>
+
+          <h2>
+            Questions guiding my research
+          </h2>
+
+          <p>
+            Some of the broader questions currently shaping my work.
+          </p>
+
+        </header>
+
+
+        <div class="question-list">
+
+          <div class="research-question">
+
+            <span class="question-number">
+              01
+            </span>
+
+            <p>
+              How do humans perceive continuous and microtonal changes in
+              pitch?
+            </p>
+
+          </div>
+
+
+          <div class="research-question">
+
+            <span class="question-number">
+              02
+            </span>
+
+            <p>
+              How does musical training change sensitivity to fine differences
+              in sound?
+            </p>
+
+          </div>
+
+
+          <div class="research-question">
+
+            <span class="question-number">
+              03
+            </span>
+
+            <p>
+              To what extent is musical pitch perception shaped by culture and
+              musical experience?
+            </p>
+
+          </div>
+
+
+          <div class="research-question">
+
+            <span class="question-number">
+              04
+            </span>
+
+            <p>
+              How can musical traditions such as Hindustani classical music
+              contribute to broader questions in auditory perception?
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ACADEMIC WORK
+    ====================================================== -->
+
+    <section class="home-section" id="academic-work">
+
+      <div class="container">
+
+        <header class="home-section-header">
+
+          <div class="eyebrow">
+            Academic Work
+          </div>
+
+          <h2>
+            Research & Presentations
+          </h2>
+
+          <p>
+            Selected work across music perception, technology, pedagogy and
+            interdisciplinary music research.
+          </p>
+
+        </header>
+
+
+        <div class="academic-grid">
+
+
+          <!-- WORK 1 -->
+
+          <article class="academic-card">
+
+            <span class="academic-tag">
+              Research
+            </span>
+
+            <h3>
+              Microtonal Pitch & Auditory Perception
+            </h3>
+
+            <p>
+              Ongoing work examining fine-grained and continuous pitch
+              perception and the roles of musical training, experience and
+              cultural context.
+            </p>
+
+            <a href="research.html" class="academic-link">
+              Explore project →
+            </a>
+
+          </article>
+
+
+          <!-- WORK 2 -->
+
+          <article class="academic-card">
+
+            <span class="academic-tag">
+              Conference Presentation
+            </span>
+
+            <h3>
+              Swar-Gyan in the Digital Age
+            </h3>
+
+            <p>
+              Exploring the expanding role of artificial intelligence and
+              digital tools in global music pedagogy, with a focus on Indian
+              classical music traditions.
+            </p>
+
+            <a href="research.html" class="academic-link">
+              View details →
+            </a>
+
+          </article>
+
+
+          <!-- WORK 3 -->
+
+          <article class="academic-card">
+
+            <span class="academic-tag">
+              Interdisciplinary Research
+            </span>
+
+            <h3>
+              Shruti, Tuning & Psychoacoustic Experience
+            </h3>
+
+            <p>
+              Work connecting musical tuning, acoustic relationships,
+              psychoacoustic experience and classroom observations.
+            </p>
+
+            <a href="research.html" class="academic-link">
+              View details →
+            </a>
+
+          </article>
+
+
+          <!-- WORK 4 -->
+
+          <article class="academic-card">
+
+            <span class="academic-tag">
+              Conference Presentation
+            </span>
+
+            <h3>
+              Sound Diplomacy in Action
+            </h3>
+
+            <p>
+              Research examining Indian music as a medium for cultural
+              dialogue, pedagogy and international cultural engagement.
+            </p>
+
+            <a href="research.html" class="academic-link">
+              View details →
+            </a>
+
+          </article>
+
+        </div>
+
+
+        <div style="margin-top: 2.5rem;">
+
+          <a href="research.html" class="btn primary">
+            View All Academic Work
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         INTERDISCIPLINARY BACKGROUND
+    ====================================================== -->
+
+    <section class="home-section background-section">
+
+      <div class="container">
+
+        <header class="home-section-header">
+
+          <div class="eyebrow">
+            Background
+          </div>
+
+          <h2>
+            An interdisciplinary path
+          </h2>
+
+          <p>
+            My research questions are informed by experience across
+            technology, musical practice and education.
+          </p>
+
+        </header>
+
+
+        <div class="background-grid">
+
+
+          <article class="background-card">
+
+            <i class="fas fa-music"></i>
+
+            <h3>
+              Music
+            </h3>
+
+            <p>
+              Hindustani classical music, vocal training, guitar,
+              improvisation, composition and performance form the musical
+              foundation of my work.
+            </p>
+
+          </article>
+
+
+          <article class="background-card">
+
+            <i class="fas fa-laptop-code"></i>
+
+            <h3>
+              Technology
+            </h3>
+
+            <p>
+              A background in Computer Science supports my growing engagement
+              with digital audio, computational methods and experimental
+              research tools.
+            </p>
+
+          </article>
+
+
+          <article class="background-card">
+
+            <i class="fas fa-chalkboard-teacher"></i>
+
+            <h3>
+              Education
+            </h3>
+
+            <p>
+              Several years of teaching music have shaped my interest in how
+              people learn, embody and perceive musical structures.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MUSIC / CREATIVE PRACTICE
+    ====================================================== -->
+
+    <section class="home-section">
+
+      <div class="container music-highlight-grid">
+
+        <div class="music-highlight-copy">
+
+          <span class="research-label">
+            Creative Practice
+          </span>
+
+          <h2>
+            Research informed by making music.
+          </h2>
+
+          <p>
+            Musical practice is not separate from my academic interests.
+            Performance, improvisation, teaching and attentive listening often
+            generate the questions that I later approach through research.
+          </p>
+
+          <p>
+            My practice includes Hindustani classical music, guitar,
+            composition, arrangement, improvisation and music production.
+          </p>
+
+          <a href="showcase.html" class="btn primary">
+            Explore Music & Performances
+          </a>
+
+        </div>
+
+
+        <div class="music-statements">
+
+          <div class="music-statement">
+            Hindustani classical music & improvisation
+          </div>
+
+          <div class="music-statement">
+            Guitar as a cross-cultural musical voice
+          </div>
+
+          <div class="music-statement">
+            Composition & music production
+          </div>
+
+          <div class="music-statement">
+            Musical embodiment & learning
+          </div>
+
+          <div class="music-statement">
+            Connecting practice with questions in perception
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT CTA
+    ====================================================== -->
+
+    <section class="home-cta research-intro">
+
+      <div class="container">
+
+        <span class="research-label">
+          Connect
+        </span>
+
+        <h2>
+          Interested in similar questions?
+        </h2>
+
+        <p>
+          I am interested in conversations and collaborations around auditory
+          perception, music cognition, pitch, microtonality, musical culture,
+          music education and interdisciplinary music research.
+        </p>
+
+        <div
+          class="research-hero-actions"
+          style="justify-content: center;"
+        >
+
+          <a
+            href="mailto:antariksh.pasricha@gmail.com"
+            class="btn primary"
+          >
+            <i class="fas fa-envelope"></i>
+            Get in Touch
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/antariksh-pasricha/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn secondary"
+          >
+            LinkedIn
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <p>
+        &copy;
+        <span id="year"></span>
+        Antariksh Pasricha. All rights reserved.
+      </p>
+
+      <div class="footer-links">
+
+        <a href="#top">
+          Back to top
+        </a>
+
+        <a href="research.html">
+          Research
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- EXISTING JS -->
+
+  <script src="script.js"></script>
+
+
+  <!-- Fallback year script in case old script doesn't handle it -->
+
+  <script>
+
+    const yearElement = document.getElementById("year");
+
+    if (yearElement) {
+      yearElement.textContent = new Date().getFullYear();
+    }
+
+  </script>
+
+</body>
+</html>
 
 
 
